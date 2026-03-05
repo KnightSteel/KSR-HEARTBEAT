@@ -15,7 +15,8 @@ dependencies = [
     "python-multipart>=0.0.9",
     "yt-dlp>=2025.2.19",
     "loguru>=0.7.2",
-    "ffmpeg-python>=0.2.0"
+    "ffmpeg-python>=0.2.0",
+    "gradio (>=6.8.0,<7.0.0)"
 ]
 
 [tool.poetry]

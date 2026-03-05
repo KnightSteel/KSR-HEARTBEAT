@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🛡️ KSR-HEARTBEAT</title>
+    <script src="https://unpkg.com/htmx.org@2.0.0"></script>
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #d4af37;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .panel {
+            border: 2px solid #d4af37;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px #d4af37;
+            background: #111;
+        }
+
+        h1 {
+            letter-spacing: 5px;
+            text-shadow: 2px 2px #000;
+        }
+
+        .status {
+            color: #fff;
+            font-size: 0.8em;
+            margin-top: 20px;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+
+        .btn {
+            background: #d4af37;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <h1>KSR-HEARTBEAT</h1>
+        <p>🛡️ PROYECTO: THE FOUNDRY</p>
+        <button class="btn">DESPERTAR MOTOR</button>
+        <div class="status">ESTATUS: {{ status }}</div>
+        <div style="margin-top: 20px; font-size: 0.7em; color: #555;">
+            Forjado por KnightSteel, Jimmy & Chuck con amor para Denisse
+        </div>
+    </div>
+</body>
+
+</html>
