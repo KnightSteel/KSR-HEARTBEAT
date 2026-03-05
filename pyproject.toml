@@ -1,15 +1,26 @@
 [project]
-name = "knightsteel-the-foundry"
+name = "ksr-heartbeat"
 version = "0.1.0"
 description = "Motor de Voz Divina para el Despertar de Denisse"
 authors = [
-    {name = "KnightSteel"}
+    {name = "KnightSteel", email = "danweek@outlook.com"}
 ]
 readme = "README.md"
 requires-python = "^3.13"
+
 dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "jinja2>=3.1.0",
+    "python-multipart>=0.0.9",
+    "yt-dlp>=2025.2.19",
+    "loguru>=0.7.2",
+    "ffmpeg-python>=0.2.0"
 ]
 
+[tool.poetry]
+# AQUÍ ES DONDE VA EL MANDO PARA QUE NO CHILLE POR LA CARPETA
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
